@@ -240,6 +240,8 @@ def run(manager: Manager, testing: bool = False) -> Any:
     trayIcon = TrayIcon(manager, icon, widget, testing=testing)
     trayIcon.show()
 
+    
+
     QApplication.setQuitOnLastWindowClosed(False)
 
     logger.info("Initialized aw-qt and trayicon succesfully")
